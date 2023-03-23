@@ -1389,6 +1389,17 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(http://my-blog-pics-repo.oss-cn-shanghai.aliyuncs.com/blog_background_img/103221386_p0_master1200.jpg);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1,
 h2,
 h3,
@@ -2816,13 +2827,6 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
   transition: filter 375ms ease-in 0.2s, transform 0.3s;
   object-fit: cover;
-}
-.avatar-img img:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 .site-data {
   display: table;
@@ -5567,3 +5571,225 @@ blockquote.pullquote.right {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
+.xdsoft_flipcountdown{display:inline-block;}
+
+.xdsoft_flipcountdown .xdsoft_digit{float:left;background-repeat:no-repeat;}
+.xdsoft_flipcountdown .xdsoft_clearex{clear:both;float:none;}
+
+
+.xdsoft_flipcountdown .xdsoft_digit{
+    background-position:0px 0px;
+}
+.xdsoft_flipcountdown .xdsoft_digit.xdsoft_separator,.xdsoft_flipcountdown .xdsoft_digit.xdsoft_dot{
+    opacity:0.9;
+}
+.xdsoft_flipcountdown.xdsoft_size_lg .xdsoft_digit{
+    width:53px;
+    height:76px;
+    background-image:url(/img/digit-lg.png);
+}
+.xdsoft_flipcountdown.xdsoft_size_lg .xdsoft_digit.xdsoft_space,
+.xdsoft_flipcountdown.xdsoft_size_lg .xdsoft_digit.xdsoft_separator,
+.xdsoft_flipcountdown.xdsoft_size_lg .xdsoft_digit.xdsoft_dot{
+    width:14px;
+    background-position:-19px -4620px;
+}
+.xdsoft_flipcountdown.xdsoft_size_lg .xdsoft_digit.xdsoft_dot{
+    background-position:-41px -4620px;
+}
+.xdsoft_flipcountdown.xdsoft_size_lg .xdsoft_digit.xdsoft_space{
+    background-position:-100px -4620px;
+}
+
+.xdsoft_flipcountdown.xdsoft_size_md .xdsoft_digit{
+    width:36px;
+    height:51px;
+    background-image:url(/img/digit-md.png);
+}
+.xdsoft_flipcountdown.xdsoft_size_md .xdsoft_digit.xdsoft_space,
+.xdsoft_flipcountdown.xdsoft_size_md .xdsoft_digit.xdsoft_separator,
+.xdsoft_flipcountdown.xdsoft_size_md .xdsoft_digit.xdsoft_dot{
+    width:10px;
+    background-position:-13px -3120px;
+}
+.xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit{
+    width:24px;
+    height:34px;
+    background-image:url(/img/digit-sm.png);
+}
+.xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit.xdsoft_space,
+.xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit.xdsoft_separator,
+.xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit.xdsoft_dot{
+    width:10px;
+    background-position:-6px -2100px;
+}
+.xdsoft_flipcountdown.xdsoft_size_xs .xdsoft_digit{
+    width:16px;
+    height:23px;
+    background-image:url(/img/digit-xs.png);
+}
+.xdsoft_flipcountdown.xdsoft_size_xs .xdsoft_digit.xdsoft_space,
+.xdsoft_flipcountdown.xdsoft_size_xs .xdsoft_digit.xdsoft_separator,
+.xdsoft_flipcountdown.xdsoft_size_xs .xdsoft_digit.xdsoft_dot{
+    width:5px;
+    background-position:-5px -1440px;
+}
+@font-face {
+    font-family: 'NinoNeumann';
+    src: url('/fonts/NinoNuemann.ttf');
+    font-display: swap;
+}
+
+h1#site-title {
+    font-family: 'NinoNeumann', sans-serif;
+    background: linear-gradient(to right, #003973, #e5e5be);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    font-size: 5em !important;
+}
+
+span#subtitle {
+    background: linear-gradient(to right, #003973, #e5e5be);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+}
+
+span.site-name {
+    font-family: 'NinoNeumann', sans-serif;
+    background: linear-gradient(to right, #003973, #e5e5be);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+}
+
+
+/* 背景的模糊到清晰的效果 */
+/*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+#page-header,
+#web_bg {
+    -webkit-animation: imgblur 3s 1 ease-in-out;
+    animation: imgblur 3s 1 ease-in-out;
+}
+@keyframes imgblur {
+    0% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+/*适配使用-webkit内核的浏览器 */
+@-webkit-keyframes imgblur {
+    0% {
+        -webkit-filter: blur(5px);
+    }
+    100% {
+        -webkit-filter: blur(0px);
+    }
+}
+/* 一图流 */
+/* 页脚透明 */
+#footer{
+    background: transparent!important;
+}
+/* 页脚黑色透明玻璃效果移除 */
+#footer::before{
+    background: transparent!important;
+}
+/* 头图透明 */
+#page-header{
+    background: transparent!important;
+}
+/* 头图遮罩层透明 */
+#page-header::before{
+    background: transparent!important;
+}
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+    background-color: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+#footer::before{
+    background: transparent!important;
+}
+[data-theme="dark"]
+#page-header::before{
+    background: transparent!important;
+}
+
+/* 设定文章推荐部分为一个可隐藏的部分 */
+/*.card-widget.card-recent-post {*/
+/*    right: -66px !important;*/
+/*    !* 默认情况下缩进左侧66px，只留一点箭头部分 *!*/
+/*}*/
+/*.card-widget.card-recent-post:hover {*/
+/*    left: 0 !important;*/
+/*    !* 默认情况下缩进左侧66px，只留一点箭头部分 *!*/
+/*}*/
+
+/* 修改卡牌的背景透明度和文字的颜色*/
+.card-widget.card-info {
+    background: rgba(0,0,0,0.4) !important;
+}
+.card-widget.card-announcement {
+    background: rgba(0,0,0,0.4) !important;
+}
+.card-widget.card-recent-post {
+    background: rgba(0,0,0,0.4) !important;
+}
+.card-widget.card-archives {
+    background: rgba(0,0,0,0.4) !important;
+}
+.card-widget.card-webinfo {
+    background: rgba(0,0,0,0.4) !important;
+}
+div#card-toc {
+    background: rgba(0,0,0,0.4) !important;
+}
+
+span.toc-text{
+    color: wheat;
+}
+
+.author-info__description {
+    color: wheat !important;
+}
+.author-info__name {
+    color: wheat !important;
+}
+.headline {
+    color: wheat !important;
+}
+.length-num {
+    color: honeydew !important;
+}
+.item-headline {
+    color: honeydew;
+}
+.announcement_content {
+    color: antiquewhite;
+}
+.recent-post-item {
+    background: rgba(240, 255, 240, 0.8) !important;
+}
+#aside-content .aside-list > .aside-list-item .content > .title{
+    color: navajowhite !important;
+}
+time{
+    color: #f53f3f !important;
+}
+span.card-archive-list-count{
+    color: whitesmoke;
+}
+span.card-archive-list-date{
+    color: whitesmoke;
+}
+.item-name{
+    color: whitesmoke;
+}
+.item-count{
+    color: whitesmoke;
+}
+
+
+
