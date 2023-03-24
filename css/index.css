@@ -6076,7 +6076,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     text-align: center;
     margin: 0 auto;
     background: rgba(255, 245, 238, 0.6);
-
+    margin-bottom: 20px;
 }
 
 .calendar-graph text.wday,
@@ -6234,6 +6234,16 @@ text.ContributionCalendar-label {
     font-size: 11px;
 }
 
+:root {
+    /*全局定义颜色*/
+    --text-color-aside-bar: wheat;
+    --text-color-post-title: #fad202;
+    --text-color-card-archive-list: whitesmoke;
+    --color-aside-content: navajowhite;
+    --text-color-author-info__description: wheat;
+    --background-card-widget: rgba(0,0,0,0.4);
+}
+
 @font-face {
     font-family: 'NinoNeumann';
     src: url('/fonts/NinoNuemann.ttf');
@@ -6266,8 +6276,8 @@ span.site-name {
 /*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
 #page-header,
 #web_bg {
-    -webkit-animation: imgblur 3s 1 ease-in-out;
-    animation: imgblur 3s 1 ease-in-out;
+    -webkit-animation: imgblur 1s 1 ease-in-out;
+    animation: imgblur 1s 1 ease-in-out;
 }
 @keyframes imgblur {
     0% {
@@ -6329,36 +6339,40 @@ span.site-name {
 
 /* 修改卡牌的背景透明度和文字的颜色*/
 .card-widget.card-info {
-    background: rgba(0,0,0,0.4) !important;
+    background: var(--background-card-widget) !important;
 }
 .card-widget.card-announcement {
-    background: rgba(0,0,0,0.4) !important;
+    background: var(--background-card-widget) !important;
 }
 .card-widget.card-recent-post {
-    background: rgba(0,0,0,0.4) !important;
+    background: var(--background-card-widget) !important;
 }
 .card-widget.card-archives {
-    background: rgba(0,0,0,0.4) !important;
+    background: var(--background-card-widget) !important;
 }
 .card-widget.card-webinfo {
-    background: rgba(0,0,0,0.4) !important;
+    background: var(--background-card-widget) !important;
+}
+
+.card-widget.card-tags{
+    background: var(--background-card-widget) !important;
 }
 div#card-toc {
-    background: rgba(0,0,0,0.4) !important;
+    background: var(--background-card-widget) !important;
 }
 
 span.toc-text{
-    color: wheat;
+    color: var(--text-color-author-info__description);
 }
 
 .author-info__description {
-    color: wheat !important;
+    color: var(--text-color-author-info__description) !important;
 }
 .author-info__name {
-    color: wheat !important;
+    color: var(--text-color-author-info__description) !important;
 }
 .headline {
-    color: wheat !important;
+    color: var(--text-color-author-info__description) !important;
 }
 .length-num {
     color: honeydew !important;
@@ -6379,17 +6393,21 @@ time{
     color: #f53f3f !important;
 }
 span.card-archive-list-count{
-    color: whitesmoke;
+    color: var(--text-color-card-archive-list);
 }
 span.card-archive-list-date{
-    color: whitesmoke;
+    color: var(--text-color-card-archive-list);
 }
 .item-name{
-    color: whitesmoke;
+    color: var(--text-color-card-archive-list);
 }
 .item-count{
-    color: whitesmoke;
+    color: var(--text-color-card-archive-list);
 }
 
+h1.post-title {
+    color: var(--text-color-post-title) !important;
+    font-size: 3.5em !important;
+}
 
 
