@@ -5681,7 +5681,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 .calendar-graph text.wday,
 .calendar-graph text.month {
     font-size: 10px;
-    fill: var(--color-calendar-graph-text);
+    fill: #aaa;
 }
 
 .contrib-legend {
@@ -5828,6 +5828,7 @@ h2.f4.text-normal.mb-3 {
 }
 
 text.ContributionCalendar-label {
+    /*fill: #ccc;*/
     fill: var(--color-calendar-graph-text);
     font-size: 11px;
 }
