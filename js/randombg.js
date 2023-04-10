@@ -1,6 +1,6 @@
 //随机背景图片数组,图片可以换成图床链接，注意最后一条后面不要有逗号
 var backimg =[
-    "url(https://resource.ninoneumann.cn/blog_background_img/103816605_p0_master1200.jpg)",
+    "url(https://resource.ninoneumann.cn/blog_background_img/93596357_p0_master1200.jpg)",
     "url(https://resource.ninoneumann.cn/blog_background_img/104136194_p0_master1200.jpg)",
     "url(https://resource.ninoneumann.cn/blog_background_img/68977253_p0_master1200.jpg)",
     "url(https://resource.ninoneumann.cn/blog_background_img/74078288_p0_master1200.jpg)",
