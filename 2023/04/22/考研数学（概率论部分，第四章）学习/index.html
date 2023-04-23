@@ -279,29 +279,33 @@ mjx-container[display="true"] + br {
 <li>相关系数</li>
 </ul>
 </div></div></div>
-<h1 id="期望与方差"><a href="#期望与方差" class="headerlink" title="期望与方差"></a>期望与方差</h1><h2 id="期望定义"><a href="#期望定义" class="headerlink" title="期望定义"></a>期望定义</h2><h3 id="一维离散"><a href="#一维离散" class="headerlink" title="一维离散"></a>一维离散</h3><p>设随机变量X的概率分布为  P \left{ X=x<em>{i}\right} =p</em>{i},i=1,2  ，…,则  EX= \sum x<em>{i}p</em>{i}   </p>
-<p>推广： 若  Y=g(X)  ，则  EY= \sum g(x<em>{i})p</em>{i}.  </p>
-<h3 id="一维连续"><a href="#一维连续" class="headerlink" title="一维连续"></a>一维连续</h3><p>设随机变量X的概率密度为f(x)，则  EX= \int _{- \infty}^{+ \infty}xf(x)dx;  </p>
-<p>推广 若  Y=g(X)  ，则  EY= \int _{- \infty}^{+ \infty}g(x)f(x)dx;  </p>
-<h3 id="二维离散"><a href="#二维离散" class="headerlink" title="二维离散"></a>二维离散</h3><p>设二维随机变量(X，Y)的联合概率分布为  P \left{ X=x<em>{i},Y=y</em>{j}\right} =p<em>{ij},i,j=1,2,\cdots<br>  Z=g(X,Y)  ，则  EZ= \sum \sum g(x</em>{i},y<em>{j})p</em>{ij};  </p>
-<h3 id="二维连续"><a href="#二维连续" class="headerlink" title="二维连续"></a>二维连续</h3><p>设二维随机变量(X，Y)的联合概率密度为f(x，y)  Z=g(X,Y)  ，则  EZ= \int <em>{- \infty}^{+ \infty}\int </em>{- \infty}^{+ \infty}g(x,y)f(x,y)dxdy.<br>特别地，  EX= \int <em>{- \infty}^{+ \infty}\int </em>{- \infty}^{+ \infty}xf(x,y)dxdy,EY= \int <em>{- \infty}^{+ \infty}\int </em>{- \infty}^{+ \infty}yf(x,y)dxdy  </p>
+<ul>
+<li>期望 </li>
+<li>方差</li>
+<li>协方差</li>
+</ul>
+<h1 id="期望与方差"><a href="#期望与方差" class="headerlink" title="期望与方差"></a>期望与方差</h1><h2 id="期望定义"><a href="#期望定义" class="headerlink" title="期望定义"></a>期望定义</h2><h3 id="一维离散"><a href="#一维离散" class="headerlink" title="一维离散"></a>一维离散</h3><p>设随机变量X的概率分布为<script type="math/tex">P \left\{ X=x_{i}\right\} =p_{i},i=1,2</script>，…,则<script type="math/tex">EX= \sum x_{i}p_{i}</script> </p>
+<p>推广： 若<script type="math/tex">Y=g(X)</script>，则<script type="math/tex">EY= \sum g(x_{i})p_{i}.</script></p>
+<h3 id="一维连续"><a href="#一维连续" class="headerlink" title="一维连续"></a>一维连续</h3><p>设随机变量X的概率密度为f(x)，则<script type="math/tex">EX= \int _{- \infty}^{+ \infty}xf(x)dx;</script></p>
+<p>推广 若<script type="math/tex">Y=g(X)</script>，则<script type="math/tex">EY= \int _{- \infty}^{+ \infty}g(x)f(x)dx;</script></p>
+<h3 id="二维离散"><a href="#二维离散" class="headerlink" title="二维离散"></a>二维离散</h3><p>设二维随机变量(X，Y)的联合概率分布为<script type="math/tex">P \left\{ X=x_{i},Y=y_{j}\right\} =p_{ij},i,j=1,2,\cdots</script></p>
+<script type="math/tex; mode=display">Z=g(X,Y) $$，则$$ EZ= \sum \sum g(x_{i},y_{j})p_{ij};</script><h3 id="二维连续"><a href="#二维连续" class="headerlink" title="二维连续"></a>二维连续</h3><p>设二维随机变量(X，Y)的联合概率密度为f(x，y)<script type="math/tex">Z=g(X,Y)</script>，则<script type="math/tex">EZ= \int _{- \infty}^{+ \infty}\int _{- \infty}^{+ \infty}g(x,y)f(x,y)dxdy.</script>+0<br>特别地，<script type="math/tex">EX= \int _{- \infty}^{+ \infty}\int _{- \infty}^{+ \infty}xf(x,y)dxdy,EY= \int _{- \infty}^{+ \infty}\int _{- \infty}^{+ \infty}yf(x,y)dxdy</script></p>
 <h2 id="期望性质"><a href="#期望性质" class="headerlink" title="期望性质"></a>期望性质</h2><ul>
-<li><p>E(aX+bY+c)=aEX+bEY+c;   </p>
-</li>
-<li><p>E(XY)=EX \cdot EY \Leftrightarrow X  与Y不相关; </p>
-<p>特别地，若X与Y相互独立，则 \Rightarrow  E(XY)=EX \cdot EY  .</p>
+<li><script type="math/tex; mode=display">E(aX+bY+c)=aEX+bEY+c;</script></li>
+<li><p><script type="math/tex">E(XY)=EX \cdot EY \Leftrightarrow X</script>与Y不相关; </p>
+<p>特别地，若X与Y相互独立，则<script type="math/tex">\Rightarrow  E(XY)=EX \cdot EY</script>.</p>
 </li>
 </ul>
-<h2 id="方差的定义"><a href="#方差的定义" class="headerlink" title="方差的定义"></a>方差的定义</h2><p>  DX=E(X-EX)^{2}=EX^{2}-(EX)^{2}    Deviation  ：平方的期望减去期望的平方</p>
-<p>==方差性质的逆用==: 前提 方差DX 可以被很容易地求出。 </p>
-<p>主要求 EX^2 = DX+(EX)^2 </p>
-<h2 id="方差的性质"><a href="#方差的性质" class="headerlink" title="方差的性质"></a>方差的性质</h2><ul>
-<li><p>D(aX+c)=a^{2}DX  ;  系数平方 常数忽略。</p>
+<h2 id="方差的定义"><a href="#方差的定义" class="headerlink" title="方差的定义"></a>方差的定义</h2><script type="math/tex; mode=display">DX=E(X-EX)^{2}=EX^{2}-(EX)^{2} $$  Deviation  ：平方的期望减去期望的平方
+
+==方差性质的逆用==: 前提 方差DX 可以被很容易地求出。 
+
+主要求$$EX^2 = DX+(EX)^2</script><h2 id="方差的性质"><a href="#方差的性质" class="headerlink" title="方差的性质"></a>方差的性质</h2><ul>
+<li><p><script type="math/tex">D(aX+c)=a^{2}DX</script>;  系数平方 常数忽略。</p>
 </li>
-<li><p>D(X \pm Y)=DX+DY \pm 2Cov(X,Y);  </p>
-<p>推论  D(X \pm Y)=DX+DY \Rightarrow X   与 Y 不相关;<br>特别地，若X与Y相互独立，则  D(X+Y)=DX+DY  </p>
+<li><script type="math/tex; mode=display">D(X \pm Y)=DX+DY \pm 2Cov(X,Y);</script><p>推论<script type="math/tex">D(X \pm Y)=DX+DY \Rightarrow X</script> 与<script type="math/tex">Y</script>不相关;<br>特别地，若X与Y相互独立，则<script type="math/tex">D(X+Y)=DX+DY</script></p>
 </li>
-<li><p>若X与Y相互独立，则  D(XY)=DX \cdot DY+(EX)^{2}DY+(EY)^{2}DX  </p>
+<li><p>若X与Y相互独立，则<script type="math/tex">D(XY)=DX \cdot DY+(EX)^{2}DY+(EY)^{2}DX</script></p>
 </li>
 </ul>
 <p>这里与第三章的随机变量的独立性的充要条件相互联系</p>
@@ -318,63 +322,61 @@ mjx-container[display="true"] + br {
 <tbody>
 <tr>
 <td>0-1 分布</td>
-<td>B(1,p)</td>
-<td>p</td>
-<td>p(1-p)</td>
+<td><script type="math/tex">B(1,p)</script></td>
+<td><script type="math/tex">p</script></td>
+<td><script type="math/tex">p(1-p)</script></td>
 </tr>
 <tr>
 <td>二项分布</td>
-<td>B(n,p)</td>
-<td>np</td>
-<td>np(1-p)</td>
+<td><script type="math/tex">B(n,p)</script></td>
+<td><script type="math/tex">np</script></td>
+<td><script type="math/tex">np(1-p)</script></td>
 </tr>
 <tr>
 <td>Poisson分布</td>
-<td>P(\lambda)</td>
-<td>\lambda</td>
-<td>\lambda</td>
+<td><script type="math/tex">P(\lambda)</script></td>
+<td><script type="math/tex">\lambda</script></td>
+<td><script type="math/tex">\lambda</script></td>
 </tr>
 <tr>
 <td>几何分布</td>
-<td>G(p)</td>
-<td>\frac{1}{p}</td>
-<td>\frac{1-p}{p^{2}}</td>
+<td><script type="math/tex">G(p)</script></td>
+<td><script type="math/tex">\frac{1}{p}</script></td>
+<td><script type="math/tex">\frac{1-p}{p^{2}}</script></td>
 </tr>
 <tr>
 <td>超几何分布</td>
-<td>H(N,M,n)</td>
-<td>\frac{nM}{N}</td>
-<td>\frac{nM}{N}(1- \frac{M}{N})(\frac{N-n}{N-1})</td>
+<td><script type="math/tex">H(N,M,n)</script></td>
+<td><script type="math/tex">\frac{nM}{N}</script></td>
+<td><script type="math/tex">\frac{nM}{N}(1- \frac{M}{N})(\frac{N-n}{N-1})</script></td>
 </tr>
 <tr>
 <td>均匀分布</td>
-<td>U(a,b)</td>
-<td>\frac{a+b}{2}</td>
-<td>\frac{(b-a)^{2}}{12}</td>
+<td><script type="math/tex">U(a,b)</script></td>
+<td><script type="math/tex">\frac{a+b}{2}</script></td>
+<td><script type="math/tex">\frac{(b-a)^{2}}{12}</script></td>
 </tr>
 <tr>
 <td>指数分布</td>
-<td>E(\lambda)</td>
-<td>\frac{1}{\lambda}</td>
-<td>\frac{1}{\lambda ^{2}}</td>
+<td><script type="math/tex">E(\lambda)</script></td>
+<td><script type="math/tex">\frac{1}{\lambda}</script></td>
+<td><script type="math/tex">\frac{1}{\lambda ^{2}}</script></td>
 </tr>
 <tr>
 <td>Gauss分布（正态分布）</td>
-<td>N(\mu,   \sigma ^{2} )</td>
-<td>\mu</td>
-<td>\sigma ^{2}</td>
+<td><script type="math/tex">N(\mu,   \sigma ^{2} )</script></td>
+<td><script type="math/tex">\mu</script></td>
+<td><script type="math/tex">\sigma ^{2}</script></td>
 </tr>
 </tbody>
 </table>
 </div>
 <h1 id="协方差与相关系数"><a href="#协方差与相关系数" class="headerlink" title="协方差与相关系数"></a>协方差与相关系数</h1><h2 id="协方差定义"><a href="#协方差定义" class="headerlink" title="协方差定义"></a>协方差定义</h2><p> Cov(X,Y)=E \left[(X-EX)(Y-EY)\right] =E(XY)-EX \cdot EY  乘积的期望减去期望的乘积</p>
-<h2 id="协方差的性质"><a href="#协方差的性质" class="headerlink" title="协方差的性质"></a>协方差的性质</h2><ul>
-<li>Cov(X,Y)=Cov(Y,X),Cov(X,X)=DX ;</li>
-<li>Cov(aX+bY+c,Z)=aCov(X,Z)+bCov(Y,Z) .</li>
-</ul>
+<h2 id="协方差的性质"><a href="#协方差的性质" class="headerlink" title="协方差的性质"></a>协方差的性质</h2><p> Cov(X,Y)=Cov(Y,X),Cov(X,X)=DX ;</p>
+<p> Cov(aX+bY+c,Z)=aCov(X,Z)+bCov(Y,Z) .</p>
 <p>推广：</p>
 <script type="math/tex; mode=display">
-已知 U = aX+b , V = cY+d \ \ 则 \ \ Cov(U,V) = Cov(aX+b,V) = aCov(X,V) =  aCov(X,cY+d) = acCov(X,Y)</script><div class="tabs" id="例题"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#例题-1">例题</button></li><li class="tab"><button type="button" data-href="#例题-2">法一</button></li><li class="tab"><button type="button" data-href="#例题-3">法二（对于cd选项的另一种计算）</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="例题-1"><p>设随机变量 <script type="math/tex">X_{1} ， X_{2} ，..., X_{n}</script> 相互独立同分布，方差<script type="math/tex">\sigma ^{2}>0</script>.若<script type="math/tex">Y= \frac{1}{n}\sum _{i=1}^{n}X_{i}</script><br>则【】<br>(A)<script type="math/tex">Cov(X_{1},Y)= \frac{\sigma ^{2}}{n}</script> (B)<script type="math/tex">Cov(X_{1},Y)= \sigma ^{2}</script><br>(C)<script type="math/tex">D(X_{1}+Y)= \frac{n+2}{n}\sigma ^{2}</script> (D)<script type="math/tex">D(X_{1}-Y)= \frac{n+1}{n}\sigma ^{2}</script></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="例题-2"><p>对A B选项使用协方差的性质二，进行计算，对CD使用方差的性质一和性质二，进行计算</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="例题-3"><script type="math/tex; mode=display">
+已知 U = aX+b , V = cY+d \ \ 则 \ \ Cov(U,V) = Cov(aX+b,V) = aCov(X,V) =  aCov(X,cY+d) = acCov(X,Y)</script><div class="tabs" id="例题"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#例题-1">例题</button></li><li class="tab"><button type="button" data-href="#例题-2">法一</button></li><li class="tab"><button type="button" data-href="#例题-3">法二（对于cd选项的另一种计算）</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="例题-1"><p><a href="2004，数一">例4.6</a>设随机变量 <script type="math/tex">X_{1} ， X_{2} ，..., X_{n}</script> 相互独立同分布，方差<script type="math/tex">\sigma ^{2}>0</script>.若<script type="math/tex">Y= \frac{1}{n}\sum _{i=1}^{n}X_{i}</script><br>则【】<br>(A)<script type="math/tex">Cov(X_{1},Y)= \frac{\sigma ^{2}}{n}</script> (B)<script type="math/tex">Cov(X_{1},Y)= \sigma ^{2}</script><br>(C)<script type="math/tex">D(X_{1}+Y)= \frac{n+2}{n}\sigma ^{2}</script> (D)<script type="math/tex">D(X_{1}-Y)= \frac{n+1}{n}\sigma ^{2}</script></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="例题-2"><p>对A B选项使用协方差的性质二，进行计算，对CD使用方差的性质一和性质二，进行计算</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="例题-3"><script type="math/tex; mode=display">
 由于Y= \frac{1}{n}\sum _{i=1}^{n}X_{i}  \ \  故 \\
 X+Y =  \frac{1+n}{n} X_1 +  \frac{1}{n}\sum _{i=2}^{n}X_{i} \\
 X-Y =  \frac{n-1}{n} X_1 +  \frac{1}{n}\sum _{i=2}^{n}X_{i} \\
@@ -384,7 +386,9 @@ X-Y =  \frac{n-1}{n} X_1 +  \frac{1}{n}\sum _{i=2}^{n}X_{i} \\
 <li><script type="math/tex">\rho_{XY}=0 \Leftrightarrow Cov(X,Y)=O \Leftrightarrow E(XY)=EX \cdot EY \Leftrightarrow D(X+Y)=DX+DY</script>;</li>
 <li><script type="math/tex; mode=display">\rho_{XY}=1 \Leftrightarrow P \left\{ Y=aX+b \right\} =1(a>0); \rho _{XY}=-1 \Leftrightarrow P \left\{ Y=aX+b \right\} =1(a<0)</script></li>
 </ul>
-<p>对于相关系数的含义的理解<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<p>推广：</p>
+<script type="math/tex; mode=display">
+</script><p>对于相关系数的含义的理解<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
 <p>明确不相关和相互独立的关系：独立一定不相关</p>
 <p>一些联想和小结</p>
 <ul>
